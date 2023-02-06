@@ -6,13 +6,13 @@ function task(firstArray, secondArray, callback) {
 }
 
 function someFn(firstArray, secondArray) {
-	let firstCopy = [...firstArray]
-  let permuteArrays = []
-	let count = 0
+  	let firstCopy = [...firstArray]
+  	let permuteArrays = []
+  	let count = 0
 
-  for (let i = secondArray.length; i >= 0; i -= 1) {
-    permuteArrays.push(...permutation(secondArray, i))
-  }
+  	for (let i = secondArray.length; i >= 0; i -= 1) {
+    		permuteArrays.push(...permutation(secondArray, i))
+  	}
 
 	for (let i = 0; i <= permuteArrays.length; i += 1) {
 		firstArray = [...firstCopy]
