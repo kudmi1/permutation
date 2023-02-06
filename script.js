@@ -1,6 +1,8 @@
 let numbers = ["1", "2", "3", "5"]
 let letters = ["a", "b", "c", "d"]
 
+task(numbers, letters, someFn)
+
 function task(firstArray, secondArray, callback) {
 	callback(firstArray, secondArray)
 }
@@ -46,4 +48,3 @@ function permutation(array, size = array.length) {
 		).map((item) => [element, ...item])
 	)
 }
-task(numbers, letters, someFn)
